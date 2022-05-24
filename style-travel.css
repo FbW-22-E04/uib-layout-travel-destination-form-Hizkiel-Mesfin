@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.whole-page {
+  height: 100vh;
+  background-image: url(images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  left: 55%;
+  top: 55%;
+  transform: translateX(-50%);
+}
+
+.main-heading {
+  font-size: 6rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.form label {
+  color: #fff;
+  font-weight: bold;
+  background-color: red;
+  padding: 1rem 1.4rem;
+}
+
+.form input {
+  padding: 1rem 1.4rem;
+}
+
+.field-flex {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.field {
+  display: flex;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.form button {
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  outline: 1px solid red;
+  transition: all 0.3s;
+}
+
+.form button:hover {
+  transform: scale(1.02);
+}
+
+.form button:first-child {
+  color: red;
+  opacity: 0.7;
+  margin-right: 1.4rem;
+}
+
+.form button:nth-child(2) {
+  color: #fff;
+  background-color: red;
+}
+
+.form button:first-child:hover,
+.form button:nth-child(2):hover {
+  color: #000;
+}
+
+/* Queries */
+
+/* max width of 1232px */
+
+@media (max-width: 77em) {
+  :root {
+    font-size: 50%;
+  }
+  .main-heading {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .form label {
+    padding: 0.8rem 1.4rem;
+  }
+
+  .form input {
+    padding: 0.8rem 1.4rem;
+  }
+}
+
+/* max width of 992px */
+
+@media (max-width: 62em) {
+  :root {
+    font-size: 43.75%;
+  }
+
+  .main-heading {
+    font-size: 5rem;
+  }
+}
+
+/* max width of 720px */
+
+@media (max-width: 45em) {
+  .field-flex {
+    flex-direction: column;
+  }
+
+  .buttons {
+    text-align: left;
+  }
+
+  .form input {
+    width: 100%;
+  }
+}
+
+/* max width of 600px */
+
+@media (max-width: 37.5em) {
+  .main-heading {
+    font-size: 4rem;
+  }
+
+  .container {
+    top: 40%;
+  }
+}
+
+/* max width of 480px */
+
+@media (max-width: 30em) {
+  .main-heading {
+    font-size: 3.5rem;
+  }
+
+  .form button:first-child {
+    margin-bottom: 2rem;
+  }
+}
